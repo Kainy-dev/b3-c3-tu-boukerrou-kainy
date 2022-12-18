@@ -35,6 +35,9 @@
   - Si le dividende est égal au diviseur alors le quotient est égal à 1: ( a = b => q = 1)
   - La division d'un nombre positif par un nombre négatif : le résultat est un nombre négatif ( a/ -b = -q)
   -  La division d'un nombre negatif par un nombre positif : le résultat est un nombre négatif ( -a/ b = -q)
+ 
+-carre
+   -le calcul du carre = de 2 = 4
            
 - Racine carrée/ square root: 
   - la racine carrée de 9 egal à 3
