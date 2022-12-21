@@ -1,45 +1,57 @@
-# Test plan
+                                                                        Test plan
 
-## BDD
+BDD
 
-- L'ordre de l'opérateur est mathématiquement correct (1 + 2 * 3 = 1 + 6 = 7)  
-  - En cas d'échec : ne renvoie pas le bon résultat
-- Les opérateurs doivent être utilisables entre eux ( 1 + 2 - 3 = 0)
-- Test int/double overflow
-- L'utilisateur ne peut pas saisir de chaîne, uniquement des chiffres
+- L'ordre de l'opérateur 
+- Nous pouvons utiliser plusieurs opérateurs
+- cela fonctione uniquement avec des chiffres
 
 
-## TDD
-
-- Ne faites que la dernière opération
-  - En cas d'échec: cash
+TDD
 
 - addition (+)
-  - l'addition est commutative (a + b = b + a)
-  - l'élément d'identité est 0 (a + 0 = a)
-
-- multiplication (\*)
-  - la multiplication est comutative (a * b = b * a)
-  -  (a * 0 = 0)
-  -  l'élément d'identité est 1 ( a * 1 = a)
-  -  (a * -b = -x)
+  - Addition est commutative 
+–>(a + b = b + a)
+  - si il est additionné avec 0 alors le résultat sera le nombre de départ 
+–>(a + 0 = a)
 
 - soustraction (-)
-  - la soustraction n'est pas commutative (a - b != b - a)
-  - soustraction : i le premier nobre inférieur que le deuxième : le résultat est négatif 
+
+ - si le premier nombre est inferieur alors le resultat sera negatif 
+  - et la soustraction n'est pas commutative 
+–>(a - b != b - a)
+  
+- multiplication (x)
+
+  -  Multiplication est commutative 
+–>(a * b = b * a)
+  -  Prends en compte le 0 
+–>(a * 0 = 0)
+  -  Elément d'identité est 1 
+–>( a * 1 = a)
+  -  Prends en compte les négatifs 
+–>(a * -b = -x)
 
 - division (/)
-  - ne peut pas diviser par 0
-    - en cas d'échec : affiche "impossible de diviser par 0"
-  - la division n'est pas commutative (a / b != b / a)
-  - Si le dividende est égal au diviseur alors le quotient est égal à 1: ( a = b => q = 1)
-  - La division d'un nombre positif par un nombre négatif : le résultat est un nombre négatif ( a/ -b = -q)
-  -  La division d'un nombre negatif par un nombre positif : le résultat est un nombre négatif ( -a/ b = -q)
+
+  - Division n'est pas commutative 
+–>(a / b != b / a)
+  - diviser un nombre par le meme nombre donne 1
+–>( a = b => c = 1)
+  - La division d’un nombre positif avec un negatif donne un nombre negatif
+–>( a/ -b = -c)
+  -  La division d’un nombre negatif avec un positif donne un nombre negatif
+–>( -a/ b = -c)
+- Pas de division par 0
  
--carre
-   -le calcul du carre = de 2 = 4
+- carre (^2)
+
+   -le calcul du carre
+ –>(2^2 = 4)
            
-- Racine carrée/ square root: 
-  - la racine carrée de 9 egal à 3
+- Racine carrée : 
 
-
+  - fonctionne seulement si c’est un nombre positif
+  - le calcul de la racine carrée
+ –>(racine9 = 3)
+                                                                 
